@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="  https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js
+" charset="utf-8"></script>
+  <title>Document</title>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="col-left">
+    <div id="search-form" class="forms">
+      <input id="search_bar" type="text" name="" value="" autocomplete=off placeholder="Search for the title here...">
+    </div>
+    <div id="film-container" class="film-container"></div>
+  </div>
+</div>
+
+<div class="col-right"></div>
+
+<p id="love">Powered by Love</p>
+
+  <!-- Template here with Handlebars -->
+  <script id="entry-template" type="text/x-handlebars-template">
+    <div class="film-box">
+      <h1>{{title}}</h1>
+      <h2>directed by <span id="director">{{director}}</span> and produced by <span id="producer">{{producer}}</span>.</h2>
+      <button id="button-show" class="buttonShow" type="button" name="button">Show description below</button>
+      <h3 id="description"  class="hidden description">Synopsis : {{description}}</h3>
+      <p>released in <span id="rDate">{{releaseDate}}</span></p>
+      <p>Link to <a href="{{linkCharacters}}">characters</a> and <a href="{{linkLocations}}">locations</a> of the film. </p>
+    </div>
+  </script>
+  <!-- End Template here -->
+
+  <script src="js/script.js" charset="utf-8"></script>
+</body>
+</html>

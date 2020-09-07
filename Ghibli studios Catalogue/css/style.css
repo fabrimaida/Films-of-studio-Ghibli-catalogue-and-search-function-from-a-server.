@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  background-image: url(puarcu2.jpg);
+  background-size: cover;
+}
+.wrapper {
+  padding: 0.5vh 0.5vw;
+}
+.col-left {
+  background-color: rgba(220, 220, 220, 0.7);
+  float: left;
+  width: 30vw;
+  overflow-y: scroll;
+  height: 100vh;
+  margin-top: -1vh;
+}
+.film-container {
+  margin-top: 8vh;
+}
+.film-box {
+  padding: 3vh 0;
+  padding: 3vh 0.6vw;
+  border-bottom: 1px solid black;
+}
+
+/* SEARCH FORM HERE */
+#search-form {
+  position: fixed;
+  height: 9vh;
+  padding: 2.20vh 0.6vw;
+  border-bottom: 1px solid black;
+  height: 8vh;
+  width: calc(30vw - 17px);
+  background-color: rgba(127, 137, 140, 0.95);
+}
+#search_bar {
+  width: 70%;
+  padding: 0.4vh 1vw;
+  border-radius: 19px;
+}
+#button_search{
+  border-radius: 5px;
+}
+#button_search:hover{
+  background-color: azure;
+}
+#love {
+  position: absolute;
+  left: 88vw;
+  top: 97vh;
+  color: white;
+}
+.hidden {
+  display: none;
+}
+#rDate {
+  color: red;
+  font-size: 1.2rem;
+}
+#director {
+  text-decoration-line: underline;
+}
+#producer {
+  text-decoration-line: underline;
+}
+h1 {
+  font-family: 'Long Cang', cursive;
+  font-size: 3.3rem;
+  color: #A62745;
+}
+h2 {
+  font-size: 1.1rem;
+  font-style: italic;
+  padding: 3vh 0;
+}
+h3 {
+ font-family: 'Long Cang', cursive;
+ font-size: 1.5rem;
+}
+
+/* Media Query here for compatibility with other screen size */
+
+@media screen and (max-width: 980px) {
+  body {
+    background-image: url(puarcu3.jpg);
+  }
+  #love {
+    left: 60vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .col-left {
+    width: 46vw;
+  }
+  #search-form {
+    width: calc(46vw - 17px);
+  }
+}
